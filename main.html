@@ -1,79 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tables in Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables In Tables</title>
     <style>
-        table, th, td {
-            border: 1px solid black;
-            /* border-collapse: collapse; */
-            padding: 8px;
+        table,td,th,tr{
+         border: 1px solid black;
+         table-layout: fixed;
+         width: 100%;
+         height: 100%;
+         padding: 20px;
+         margin: 20px;
+         /* border-spacing: 50px; */
+
         }
-        th {
-            background-color: #f2f2f2;
-        }
-        .black-cell {
+
+        #yudie{
+             color: white;
             background-color: black;
-            color: white;
+            text-align: center;
         }
+        
     </style>
 </head>
 <body>
+
     <table>
         <tr>
-            <th>Nested Table 1</th>
-            <th>Nested Table 2</th>
-        </tr>
-        <tr>
             <td>
+                <!--Nested Table 2-->
                 <table>
                     <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
+                    <th colspan="2">Nested table 2</th>
+                        
                     </tr>
                     <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
                     </tr>
+                    <tr>
+                        <td>abc</td>
+                        <td>def</td>
+                    </tr>
+
                 </table>
             </td>
             <td>
-                <table>
-                    <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                    </tr>
-                    <tr>
-                        <td class="black-cell">HTML</td>
-                        <td>Cell 2</td>
-                    </tr>
-                </table>
+                <!--Nested Table 1-->
+               <table>
+                <tr>
+                    <th>Nested Table 1</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                           <li>List item</li>
+                           <li>List item</li>
+                           <li>List item</li>
+                        </ul>
+                    </td>
+                </tr>
+               </table>
             </td>
         </tr>
         <tr>
-            <th>Nested Table 3</th>
-            <th>Nested Table 4</th>
-        </tr>
-        <tr>
             <td>
+                <!--Nested Table 3-->
                 <table>
-                    <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                    </tr>
+                  <tr>
+                    <th colspan="2"></th>
+                  </tr>      
+                  <tr>
+                    <td><a href="">Nested Table</a></td>
+                    <td>Demo Contiued</td>
+                  </tr>              
                 </table>
             </td>
             <td>
-                <ul>
-                    <li>List item 1</li>
-                    <li>List item 2</li>
-                    <li>List item 3</li>
-                </ul>
+               <!--Nested Table 4-->  
+              <table>
+                <tr>
+                    <th>Nested Table 4</th>
+                   </tr>
+                   <tr>
+                    <td id="yudie">HTML</td>
+                   </tr>
+              </table>
             </td>
         </tr>
     </table>
+    
 </body>
 </html>
