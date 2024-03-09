@@ -3,93 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables In Tables</title>
-    <style>
-        table,td,th,tr{
-         border: 1px solid black;
-         table-layout: fixed;
-         width: 100%;
-         height: 100%;
-         padding: 20px;
-         margin: 20px;
-         /* border-spacing: 50px; */
-
-        }
-
-        #yudie{
-             color: white;
-            background-color: black;
-            text-align: center;
-        }
-        
-    </style>
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <table>
-        <tr>
-            <td>
-                <!--Nested Table 2-->
-                <table>
-                    <tr>
-                    <th colspan="2">Nested table 2</th>
-                        
-                    </tr>
-                    <tr>
+    <table border="1" style="width: 100%; height: 100%;">
+    
+       <tr>
+        <td>
+            <!--Nested Table 2-->
+            <table border="1" style="width: 100%; height: 100%;">
+                <tr>
+                    <th colspan="2">Nested Table 2</th>
+                </tr>
+                <tr>
                     <th>Column 1</th>
                     <th>Column 2</th>
-                    </tr>
-                    <tr>
-                        <td>abc</td>
-                        <td>def</td>
-                    </tr>
+                </tr>
+                <tr>
+                    <td>abc</td>
+                    <td>def</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <!--Nested Table 1-->
+            <table border="1" style="width: 100%; height: 100%;">
+                <tr><th>Nested Table 1</th></tr>
+                <tr><td>
+                    <ul>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </td></tr>
+            </table>
+        </td>
+       </tr>
 
-                </table>
-            </td>
-            <td>
-                <!--Nested Table 1-->
-               <table>
+
+       <tr>
+        <td>
+            <!--Nested Table 3-->
+           <table border="1" style="width: 100%; height: 100%;">
+            <tr><th colspan="2">Nested Table 3</th></tr>
+            <tr>
+                <td>
+                <a href="#">Nested Table
+
+            </a>
+        </td>
+        <td>
+            Demo Continued
+        </td>
+        </tr>
+        
+           </table>
+        </td>
+        <td>
+            <!--Nested Table 4-->
+            <table border="1" style="width: 100%; height: 100%;">
                 <tr>
-                    <th>Nested Table 1</th>
+                    <th>Nested table 4</th>
+                    
                 </tr>
                 <tr>
-                    <td>
-                        <ul>
-                           <li>List item</li>
-                           <li>List item</li>
-                           <li>List item</li>
-                        </ul>
-                    </td>
+                    <td style="background-color: black; color:white;">HTML</td>
                 </tr>
-               </table>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!--Nested Table 3-->
-                <table>
-                  <tr>
-                    <th colspan="2"></th>
-                  </tr>      
-                  <tr>
-                    <td><a href="">Nested Table</a></td>
-                    <td>Demo Contiued</td>
-                  </tr>              
-                </table>
-            </td>
-            <td>
-               <!--Nested Table 4-->  
-              <table>
-                <tr>
-                    <th>Nested Table 4</th>
-                   </tr>
-                   <tr>
-                    <td id="yudie">HTML</td>
-                   </tr>
-              </table>
-            </td>
-        </tr>
-    </table>
+            </table>
+
+        </td>
+       </tr>    
     
+    </table>
 </body>
 </html>
