@@ -1,2 +1,33 @@
 
 /* Your CSS Code here. */
+/* Your CSS Code here. */
+/* table,td,th,tr{
+	border:1px solid black;
+	margin:1px;
+}
+table table{
+	text-align:center;
+	width:100%;
+     
+}
+.bg{
+	background-color:rgb(0,0,0);
+	color:white;
+} */
+
+table,th,tr,td{
+border:1px solid black;
+}
+.Data1{
+width:250px;
+height:200px;
+}
+.Row1{
+text-align:center;
+}
+.tab1{
+width:250px;
+}
+.Data2{
+height:100px
+}
